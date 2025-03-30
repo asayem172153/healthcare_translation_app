@@ -4,12 +4,12 @@
 This project, **Healthcare Translation App**, is designed to capture spoken input in one language, translate it into another language using the MyMemory API, and then provide an audio playback of the translation. It consists of a Flask backend and a JavaScript-powered frontend.
 
 ## Project Structure
-  healthcare_translation_app/
-  ├── backend/                 # HIPAA-compliant logging
-  │   ├── app.py               # Rate-limited API endpoints
-  │   ├── config.py            # Encrypted credential storage
-  └── frontend/                # WCAG 2.1 AA compliant UI
-      ├── templates/ 
+  healthcare_translation_app/  
+  ├── backend/                 # HIPAA-compliant logging  
+  │   ├── app.py               # Rate-limited API endpoints  
+  │   ├── config.py            # Encrypted credential storage  
+  └── frontend/                # WCAG 2.1 AA compliant UI  
+      ├── templates/   
 
 ### Backend
 - **app.py**: Sets up the Flask server. It serves static files from the `frontend` folder, renders the homepage, and exposes a `/translate` endpoint.
