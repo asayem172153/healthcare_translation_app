@@ -4,7 +4,7 @@
 The Healthcare Translation App helps users speak in one language, translate the spoken text into another language, and listen to the translation. This guide will walk you through the steps to use the app effectively.
 
 ## Getting Started
-1. **Open the App**: Launch your web browser and navigate to the app's URL (the root endpoint served by the Flask backend).
+1. **Open the App**: Launch your web browser and visit the app at [https://asayem172153.pythonanywhere.com/](https://asayem172153.pythonanywhere.com/).
 2. **Interface Overview**: The home page is divided into sections for language selection, control buttons, and transcript display.
 
 ## Using the App
