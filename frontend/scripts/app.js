@@ -29,19 +29,12 @@ function validateSelection() {
 startBtn.addEventListener('click', () => {
     if (!validateSelection()) return;
 
-    // Use standard or vendor prefixed API
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!SpeechRecognition) {
-        alert("Speech Recognition is not supported by your browser. Please use a supported browser such as Chrome.");
-        return;
-    }
-
     // Stop previous recognition instance and create a new one
     if (recognition) {
         recognition.stop();
     }
 
-    recognition = new SpeechRecognition();
+    recognition = new webkitSpeechRecognition();
     recognition.continuous = true;
     recognition.interimResults = true;
     recognition.lang = sourceLang.value;
